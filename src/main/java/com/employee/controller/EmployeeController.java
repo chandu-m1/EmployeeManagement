@@ -27,7 +27,7 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 	
-	@CrossOrigin("http://localhost:4200")
+	@CrossOrigin("http://localhost:4200/employees")
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees()
 	{
