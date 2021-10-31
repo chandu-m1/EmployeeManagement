@@ -20,9 +20,9 @@ import com.employee.exception.ResourceNotFoundException;
 import com.employee.model.Employee;
 import com.employee.repository.EmployeeRepository;
 
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/v1/")
-@CrossOrigin(origins="*")
 public class EmployeeController {
 	
 	@Autowired
