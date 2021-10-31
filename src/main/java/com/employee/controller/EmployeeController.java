@@ -22,12 +22,13 @@ import com.employee.repository.EmployeeRepository;
 
 @RestController
 @RequestMapping("/api/v1/")
+@CrossOrigin(origins="*")
 public class EmployeeController {
 	
 	@Autowired
 	private EmployeeRepository employeeRepository;
 	
-	@CrossOrigin("http://localhost:4200/employees")
+	
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees()
 	{
